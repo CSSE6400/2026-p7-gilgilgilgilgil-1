@@ -1,4 +1,9 @@
 services:
+  redis: 
+    image: redis:latest 
+    restart: always 
+    ports: 
+      - "6379:6379"
   database:
     image: postgres:latest
     restart: always
